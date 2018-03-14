@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.home.raunak.myapp2.MyBluetoothDemo">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth Control Panel"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Device Status"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        android:textAlignment="viewStart" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setting" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Devices" />
+</LinearLayout>

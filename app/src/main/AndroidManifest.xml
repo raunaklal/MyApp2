@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.home.raunak.myapp2">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GridDemo" />
+        <activity android:name=".WebDemo" />
+        <activity android:name=".MyWeb" />
+        <activity android:name=".WebDemo2" />
+        <activity android:name=".MyWeb2" />
+        <activity android:name=".MyCustom" />
+        <activity android:name=".MyIntent" />
+        <activity android:name=".EmailDemo" />
+        <activity android:name=".CheckBoxDemo" />
+        <activity android:name=".RadioDemo" />
+        <activity android:name=".SpinnerDemo" />
+        <activity android:name=".RatingDemo" />
+        <activity android:name=".SeekBarDemo" />
+        <activity android:name=".ServiceDemo" />
+
+        <service android:name=".MyFirstService" />
+        <service android:name=".Kbr" />
+
+        <activity android:name=".MyMusicDemo" />
+        <activity android:name=".MyDataBase" />
+        <activity android:name=".Reg" />
+        <activity android:name=".ViewRecord" />
+        <activity android:name=".UpdateDemo" />
+        <activity android:name=".DeleteDemo" />
+        <activity android:name=".SensorDemo" />
+        <activity android:name=".SharedPreferencesDemo" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MyMap"
+            android:label="@string/title_activity_my_map" />
+        <activity android:name=".MyGps" />
+        <activity android:name=".IntentWithData" />
+        <activity android:name=".ShowData" />
+        <activity android:name=".SDCardDemo" />
+        <activity android:name=".ViewVideo" />
+        <activity android:name=".MyNotificationDemo" />
+        <activity android:name=".MyViewDemo" />
+        <activity android:name=".MyBluetoothDemo" />
+        <activity android:name=".MyCameraDemo" />
+        <activity android:name=".MyContentProviderDemo"></activity>
+
+        <provider
+            android:authorities="com.raunak.lal"
+            android:name=".UseProvider"
+            android:exported="true"></provider>
+    </application>
+
+</manifest>
